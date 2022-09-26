@@ -1,0 +1,24 @@
+<products>
+
+    <product id="11">  <!-- parent of name, id , email --> <!-- <student id="1"></student> here id is attribute-->
+    <name>Samsung</name>
+    <unitprice>35000</unitprice>
+    <stock>50</stock>
+    <status>1</status>>
+    </product>
+    
+    <product id="11">  <!-- parent of name, id , email --> <!-- <student id="1"></student> here id is attribute-->
+        <name>HTC</name>
+        <unitprice>65300</unitprice>
+        <stock>35</stock>
+        <status>0</status>>
+        </product>
+
+        <product id="11">  <!-- parent of name, id , email --> <!-- <student id="1"></student> here id is attribute-->
+            <name>Nokia</name>
+            <unitprice>25100</unitprice>
+            <stock>100</stock>
+            <status>1</status>>
+            </product>
+    </products>
+    
