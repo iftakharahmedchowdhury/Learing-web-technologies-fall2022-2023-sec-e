@@ -1,0 +1,14 @@
+<students>
+
+<student id="1">  <!-- parent of name, id , email --> <!-- <student id="1"></student> here id is attribute-->
+<name>ABCD</name>
+<id>1234</id>
+<email>a@gmail.com</email>
+</student>
+
+<student id="2">  <!-- parent of name, id , email -->
+<name>ddd</name>
+<id>888</id>
+<email>b@gmail.com</email>
+</student>
+</students>
