@@ -9,21 +9,34 @@
         <area>Banani#3</area>
         <city>Dhaka</city>
     </address>
-    <address>H# 38, R#3, Banani, Dhaka</address>
+  
     <department>Sales</department>
     <salary>$20000</salary>>
     </employee>
     
     <employee id="2">  <!-- parent of name, id , email -->
     <name>  Mark Zuckerberg</name>
-    <address>Flat# A/1, H# 20, R#18, Mirpur, Dhaka</address>
+    <address>
+        <block>Flat# A/1</block>
+        <roadnumber>20</roadnumber>
+        <flat>R#18</flat>
+        <area>Mirpur</area>
+        <city>Dhaka</city>
+    </address>
+
     <department>Accounts</department>
     <salary>$12000</salary>>
     </employee>
 
     <employee id="2">  <!-- parent of name, id , email -->
         <name>  Ala Voski </name>
-        <address>H# 38, R#3, Motijheel</address>
+        <address>
+            <block>H#</block>
+            <roadnumber>38</roadnumber>
+            <flat>R#3</flat>
+            <area>Motijheel#3</area>
+            <city></city>
+        </address>
         <department>Human Resource </department>
         <salary>$30000</salary>>
         </employee>
