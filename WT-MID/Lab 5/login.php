@@ -1,3 +1,18 @@
+<?php 
+
+    if(isset($_GET['err'])){
+        if($_GET['err'] == 'invalid_request'){
+            echo "invalid request error..";
+        }
+
+        if($_GET['err'] == 'null'){
+            echo "null username/password";
+        }
+    }
+
+
+?>
+
 <html>
 
 <head>
@@ -12,96 +27,64 @@
 
 
         <table align="right">
-            <tr>
-                <td>
-                    <a href="">HOME</a>
-                    <a href="">Login</a>
-                    <a href="">Registration</a>
-                </td>
-            </tr>
+            <td><a href="publicHome.html">Home</a></td>
+            <td><a href="login.php">Login</a></td>
+            <td><a href="registration.php">Registration</a></td>
         </table>
 
     </fieldset>
-    <!--     <fieldset>
-        <legend>logIn</legend>
-        <table>
-        
+
+    <form method="post" action="loginCheck.php">
+        <table align="center">
+
             <tr>
                 <td>
-                User Name :<input type="text">
+                    <p> User Name :</p>
+
                 </td>
-               
-            </tr>
-           
-            <tr>
-        
-              <td>
-              User Password : <input type="password">
-              </td>
-               
-            </tr>
-            <hr>
-            <tr>
-            
+
                 <td>
-                <input type="checkbox"> Remember me
+                    <input type="text" name="username">
+
+                </td>
+
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <p>User Password :</p>
+
+                </td>
+                <td>
+                    <input type="password" name="password">
+
+                    <hr>
+
+                </td>
+
+
+            </tr>
+
+            <br>
+
+            <tr>
+                <td>
+
+                    <input type="checkbox"> Remember me
+
+
                 </td>
             </tr>
             <tr>
-                
+                <td>
+                    <button type="submit">Submit</button>
+                </td>
+                <td><a href="">Forgot password</a></td>
             </tr>
-        
 
+        </table>
 
-        </table> -->
-    <table align="center">
-
-        <tr>
-            <td>
-                <p> User Name :</p>
-
-            </td>
-
-            <td>
-                <input type="text">
-
-            </td>
-
-        </tr>
-        <br>
-        <tr>
-            <td>
-                <p>User Password :</p>
-                
-            </td>
-            <td>
-                <input type="password">
-             
-               <hr>
-               
-            </td>
-            
-           
-        </tr>
-        
-        <br>
-
-        <tr>
-            <td>
-
-                <input type="checkbox"> Remember me
-
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button type="submit">Submit</button>
-            </td>
-            <td><a href="">Forgot password</a></td>
-        </tr>
-
-    </table>
+    </form>
     </fieldset>
 
 
