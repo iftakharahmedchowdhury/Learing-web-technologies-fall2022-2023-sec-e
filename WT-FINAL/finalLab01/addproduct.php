@@ -1,31 +1,45 @@
-<?php 
+<?php
 
-    if(isset($_GET['err'])){
-        if($_GET['err'] == 'invalid_request'){
-            echo "invalid request error..";
-        }
-
-        if($_GET['err'] == 'null'){
-            echo "null username/password";
-        }
+if (isset($_GET['err'])) {
+    if ($_GET['err'] == 'invalid_request') {
+        echo "invalid request error..";
     }
+
+    if ($_GET['err'] == 'null') {
+        echo "null username/password";
+    }
+    if ($_GET['err'] == 'addData') {
+        echo "Data inserted";
+    }
+    
+}
 ?>
 
 <html>
 <html>
+
 <head>
-  
+
     <title></title>
 </head>
+
 <body>
-<form method="post" action="addproductCheck.php" enctype="">
-            <fieldset>
-                <legend>Add product</legend>
-               Product Name: <br> <input type="text" name="productName" value=""/> <br>
-                Buying price: <br> <input type="number" name="sellPrice" value=""/> <br>
-                Selling price: <br> <input type="number" name="buyPrice" value=""/> <br>
-                    <input type="submit" name="btn" value="Submit"/>
-            </fieldset>
-        </form>
+    <form method="post" action="addproductCheck.php" enctype="">
+        <fieldset>
+            <legend>Add product</legend>
+            Product Name: <br> <input type="text" name="productName" value="" /> <br>
+            Buying price: <br> <input type="number" name="sellPrice" value="" /> <br>
+            Selling price: <br> <input type="number" name="buyPrice" value="" /> <br>
+            <input type="submit" name="btn" value="Submit" />
+            
+        </fieldset>
+    </form>
+
+  <form action="displayProfit.php">
+  <input type="submit" name="btn" value="Display" />
+   
+  </form>
+
 </body>
+
 </html>
